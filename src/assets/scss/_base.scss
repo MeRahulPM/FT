@@ -1,0 +1,205 @@
+
+.customModal{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    margin:auto;
+    display:none;
+    z-index: 100000;
+    &.open{
+        display:block;
+    }
+    &:after{
+        content: '';
+        background: rgba(0,0,0,0.5);
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 10000;
+    }
+    .customModalBlock{
+        background:#fff;
+        width:600px;
+        height: 550px;
+        margin:0 auto;
+        position: fixed;
+        top:10%;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:10001;
+        .close{
+            right:10px;
+            &:before, &:after{
+                left:8px;
+            }
+        }        
+        .brand-logo{
+            padding:30px;
+            max-width:440px;
+            margin:0 auto;
+            .FullThrottleLogo{
+                border-right: 1px solid #999;
+            }
+        }
+        .customModalBody{
+            .table{
+                th,td{
+                    padding:10px
+                }
+                th[scope="row"]{
+                    border-right:1px solid #ccc;
+                }
+            }
+            
+        
+        }
+    }
+    .customModalProfileBlock{
+      background:#fff;
+      width:600px;
+      height: 420px;
+      margin:0 auto;
+      position: fixed;
+      top:10%;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:10001;
+      .close{
+          right:10px;
+          &:before, &:after{
+              left:8px;
+          }
+      }        
+      .brand-logo{
+          padding:30px;
+          max-width:440px;
+          margin:0 auto;
+          .conduentLogo{
+              border-right: 1px solid #999;
+          }
+      }
+      .customModalBody{
+          .table{
+              th,td{
+                  color:rgb(49, 45, 45);
+                  padding: 10px;
+                  width: 190px;
+                  
+              }
+              td{
+                padding-left: 110px;
+              }
+              
+              
+          }
+         
+         
+          border-style: solid;
+          border-color: rgb(224, 208, 202);
+          
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    color :red
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 18px;
+    width: 2px;
+    color :red;
+    background-color: #de2c2c;
+  }
+  .close:before {
+    transform: rotate(45deg);
+    background-color: #de2c2c;
+  }
+  .close:after {
+    transform: rotate(-45deg);
+    background-color: #de2c2c;
+  }
+
+ 
+ 
+
+  .SelectDate:hover  {
+    padding-right: 25px;
+  }
+  
+ 
+  .SelectDate{
+      
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+  }
+  .btnRightAlingment{
+      float: right;
+  }
+ .fontStyle{
+    color: #635353;
+    text-align: center;
+    font-size: 18px;
+ }
+.mainPage{
+    display: inline-block;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, rgba(247, 0, 0, 0), rgb(170, 0, 0));
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    
+    
+    width: 600px;
+    height: 600px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+    margin-top:86px;
+    
+}
+.mainPage:hover{
+    background-color: #111111;
+    color:white
+    
+}
+ul{
+    list-style-type: none;
+    padding:80px
+    
+}
+.outer{
+    background-image: linear-gradient(to right, rgba(121, 112, 112, 0.637), rgba(14, 12, 12, 0.733));
+    display: flex;
+    justify-content: center;
+}
+.msgContent{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
